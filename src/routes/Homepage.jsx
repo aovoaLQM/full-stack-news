@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MainCategories from "../components/MainCategories";
 
 const Homepage = () => {
   return (
@@ -21,7 +22,7 @@ const Homepage = () => {
         </div>
 
         {/* Animation Button */}
-        <Link to="write" className="relative">
+        <Link to="write" className=" hidden md:block relative">
           <svg
             viewBox="0 0 200 200"
             width="200"
@@ -59,7 +60,8 @@ const Homepage = () => {
           </button>
         </Link>
       </div>
-
+      {/*Category */      }
+      <MainCategories/>
       {/* Featured news */}
       {/* News list */}
     </div>
